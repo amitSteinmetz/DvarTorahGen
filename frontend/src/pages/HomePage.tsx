@@ -83,8 +83,8 @@ const HomePage = () => {
         throw new Error(`HTTP error! status: ${response.status}`);
       }
 
-      const data = await response.json();
-      console.log("Drasha response from openAI:", data);
+      const result = await response.json();
+      console.log("Drasha response from openAI:", result);
 
       // // Get the file from the response
       // const blob = await response.blob();
@@ -111,23 +111,12 @@ const HomePage = () => {
 
       // console.log("File downloaded successfully:", fileName);
 
-      // Mock response for UI display (since file content isn't easily readable)
-      // In the future, the endpoint could return both the file and the content
-      const mockResult: DvarTorahResult = {
+      const resultToShow: DvarTorahResult = {
         title: `דבר תורה - פרשת ${filters.parasha}`,
-        content: `בפרשת ${filters.parasha}${
-          filters.commentator ? ` לפי ${filters.commentator}` : ""
-        }, אנו רואים את...
-
-זהו מקום לדבר התורה שייווצר. הטקסט המלא יגיע מהשרת.
-
-הנושא המרכזי בפרשה זו עוסק ב...
-        
-בברכה,
-דבר תורה מותאם אישית`,
+        content: result.result
       };
 
-      setResult(mockResult);
+      setResult(resultToShow);
       console.log("D'var Torah generated and downloaded!");
     } catch (error) {
       console.error("Error generating D'var Torah:", error);
