@@ -1,6 +1,7 @@
 import React from "react";
 import { Form, Button, Row, Col, Card } from "react-bootstrap";
 import Loader from "./Loader";
+import logo from "../assets/images/app-logo.png";
 
 interface FiltersPanelProps {
   isLoading: boolean;
@@ -21,6 +22,8 @@ const FiltersPanel: React.FC<FiltersPanelProps> = ({ isLoading, onSubmit }) => {
         <p className="text-muted">
           בחר פרשה או משהו אחר וצור דבר תורה בהתאם למגוון רחב של פילטרים
         </p>
+
+        <img alt="logo" src={logo} className="header__logo-img" />
       </div>
 
       <Card className="p-4 shadow-lg border-0 filters-card">
