@@ -19,7 +19,7 @@ const FiltersPanel: React.FC<FiltersPanelProps> = ({ isLoading, onSubmit }) => {
           מחר שבת ועוד אין לך דבר תורה מוכן? הגעת למקום הנכון!
         </p>
         <p className="text-muted">
-          בחר פרשה וצור דבר תורה בהתאם למגוון רחב מאוד מאוד מאוד של פילטרים
+          בחר פרשה או משהו אחר וצור דבר תורה בהתאם למגוון רחב של פילטרים
         </p>
       </div>
 
