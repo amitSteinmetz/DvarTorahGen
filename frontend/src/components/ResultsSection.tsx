@@ -1,12 +1,18 @@
 import React from "react";
 import { Card, Button, ButtonGroup, Badge } from "react-bootstrap";
-import { ResultsSectionProps } from "../models/dvarTorah.model";
+import { Filters } from "../models/filters.model";
+
+type ResultsSectionProps = {
+  title: string;
+  content: string;
+  filters: Filters;
+  onCreateNew?: () => void;
+}
 
 const ResultsSection: React.FC<ResultsSectionProps> = ({
   title,
   content,
-  parasha,
-  commentator,
+ filters,
   onCreateNew,
 }) => {
   const handleCopy = () => {
@@ -54,9 +60,9 @@ const ResultsSection: React.FC<ResultsSectionProps> = ({
           <body>
             <h1>${title}</h1>
             ${
-              parasha || commentator
-                ? `<div class="meta">${parasha ? `פרשה: ${parasha}` : ""} ${
-                    commentator ? `| מפרש: ${commentator}` : ""
+              filters.parasha || filters.commentator
+                ? `<div class="meta">${filters.parasha ? `פרשה: ${filters.parasha}` : ""} ${
+                    filters.commentator ? `| מפרש: ${filters.commentator}` : ""
                   }</div>`
                 : ""
             }

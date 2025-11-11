@@ -148,8 +148,7 @@ const HomePage = () => {
                 <ResultsSection
                   title={result.title}
                   content={result.content}
-                  parasha={submittedFilters.parasha}
-                  commentator={submittedFilters.commentator || undefined}
+                  filters={submittedFilters}
                   onCreateNew={handleCreateNew}
                 />
               ) : (
