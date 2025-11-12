@@ -129,15 +129,16 @@ const Main = () => {
         </div>
       </div>
 
-      <ConfirmModal
-        show={showConfirmModal}
-        title="אישור יצירת דבר תורה חדש"
-        message="האם אתה בטוח שברצונך ליצור דבר תורה חדש? דבר התורה הנוכחי יאבד ולא ניתן יהיה לשחזר אותו."
-        confirmText="כן, צור חדש"
-        cancelText="ביטול"
-        onConfirm={handleConfirmCreateNew}
-        onCancel={handleCancelCreateNew}
-      />
+      {showConfirmModal && (
+        <ConfirmModal
+          title="אישור יצירת דבר תורה חדש"
+          message="האם אתה בטוח שברצונך ליצור דבר תורה חדש? דבר התורה הנוכחי יאבד ולא ניתן יהיה לשחזר אותו."
+          confirmText="כן, צור חדש"
+          cancelText="ביטול"
+          onConfirm={handleConfirmCreateNew}
+          onCancel={handleCancelCreateNew}
+        />
+      )}
     </div>
   );
 };
