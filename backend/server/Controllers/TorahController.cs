@@ -39,13 +39,6 @@ namespace server.Controllers
             return File(fileBytes, contentType, fileName);
         }
 
-        // [HttpPost("generate")]
-        // public async Task<IActionResult> Generate([FromBody] DrashaFilters filters)
-        // {
-        //     string dvarTorah = await _torahRepository.GenerateTorah(filters);
-        //     return Ok(dvarTorah);
-        // }
-
         [HttpPost("generate-drasha")]
         public IActionResult GenerateDrasha(DrashaFilters filters)
         {

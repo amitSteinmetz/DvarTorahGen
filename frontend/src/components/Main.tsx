@@ -45,9 +45,9 @@ const Main = () => {
     }
 
     setSubmittedFilters(filters);
-    console.log("Selected filters:", filters);
 
     try {
+      // the response should contain a file, and a content as string.
       const response = await fetch(
         "http://localhost:5286/api/torah/generate-drasha",
         {
@@ -64,7 +64,7 @@ const Main = () => {
       const result = await response.json();
       console.log("Drasha response from openAI:", result);
 
-      // // Get the file from the response
+      // // Get the file from the response      
       // const blob = await response.blob();
 
       // // Extract filename from Content-Disposition header or use default
@@ -89,10 +89,10 @@ const Main = () => {
 
       // console.log("File downloaded successfully:", fileName);
 
-      // Create title based on topic and parasha if available
+      // Display visual result content with title
       let title = `דבר תורה - ${filters.topic}`;
       if (filters.parasha) {
-        title = `דבר תורה - ${filters.parasha}`;
+        title = `דבר תורה לפרשת ${filters.parasha}`;
       }
 
       const resultToShow: DvarTorahResult = {

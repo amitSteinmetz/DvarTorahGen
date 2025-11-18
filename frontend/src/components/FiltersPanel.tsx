@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useMemo, useState } from "react";
 import { Form, Button, Row, Card } from "react-bootstrap";
 import Loader from "./Loader";
 import Filter from "./Filter";
-import { TOPICS, PARASHOT, STYLES } from "../utils/hebrewConstants";
+import { TOPICS, PARASHOT, STYLES, LENGTHS } from "../utils/hebrewConstants";
 
 interface FiltersPanelProps {
   isLoading: boolean;
@@ -15,7 +15,10 @@ const FiltersPanel: React.FC<FiltersPanelProps> = ({ isLoading, onSubmit }) => {
   const handleTopicChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSelectedTopic(e.target.value);
   };
-  const showParashaFilter = selectedTopic === "פרשת שבוע";
+  const showParashaFilter = useMemo(
+    () => selectedTopic === "פרשת שבוע",
+    [selectedTopic]
+  );
 
   return (
     <div className="filters-panel-container">
@@ -27,9 +30,7 @@ const FiltersPanel: React.FC<FiltersPanelProps> = ({ isLoading, onSubmit }) => {
         <p className="text-muted">
           מחר שבת ועוד אין לך דבר תורה מוכן? הגעת למקום הנכון!
         </p>
-        <p className="text-muted">
-          בחר נושא וסגנון וצור דבר תורה מותאם עבורך
-        </p>
+        <p className="text-muted">בחר נושא וסגנון וצור דבר תורה מותאם עבורך</p>
       </div>
 
       <Card className="p-4 shadow-lg border-0 filters-card">
@@ -60,6 +61,14 @@ const FiltersPanel: React.FC<FiltersPanelProps> = ({ isLoading, onSubmit }) => {
               name="style"
               options={Object.values(STYLES)}
               placeholder="בחר סגנון"
+            />
+
+            <Filter
+              controlId="length"
+              label="אורך"
+              name="length"
+              options={Object.values(LENGTHS)}
+              placeholder="בחר אורך"
             />
           </Row>
 

@@ -24,3 +24,9 @@ export const STYLES = {
   "עם הומור": "עם הומור",
 } as const;
 
+export const LENGTHS = {
+  "קצר": "קצר",
+  "בינוני": "בינוני",
+  "ארוך": "ארוך",
+} as const;
+
