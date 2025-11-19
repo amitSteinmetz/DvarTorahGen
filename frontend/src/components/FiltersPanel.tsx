@@ -13,7 +13,7 @@ const FiltersPanel: React.FC<FiltersPanelProps> = ({ isLoading, onSubmit }) => {
   const [selectedTopic, setSelectedTopic] = useState<string>("");
 
   const handleTopicChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedTopic(e.target.value);
+    setSelectedTopic(e.target.selectedOptions[0]?.text ?? "");
   };
   const showParashaFilter = useMemo(
     () => selectedTopic === "פרשת שבוע",
@@ -40,7 +40,7 @@ const FiltersPanel: React.FC<FiltersPanelProps> = ({ isLoading, onSubmit }) => {
               controlId="topic"
               label="נושא"
               name="topic"
-              options={Object.values(TOPICS)}
+              options={TOPICS}
               placeholder="בחר נושא"
               onChange={handleTopicChange}
             />
@@ -50,7 +50,7 @@ const FiltersPanel: React.FC<FiltersPanelProps> = ({ isLoading, onSubmit }) => {
                 controlId="parasha"
                 label="בחר פרשה"
                 name="parasha"
-                options={Object.values(PARASHOT)}
+                options={PARASHOT}
                 placeholder="בחר פרשה"
               />
             )}
@@ -59,7 +59,7 @@ const FiltersPanel: React.FC<FiltersPanelProps> = ({ isLoading, onSubmit }) => {
               controlId="style"
               label="סגנון"
               name="style"
-              options={Object.values(STYLES)}
+              options={STYLES}
               placeholder="בחר סגנון"
             />
 
@@ -67,7 +67,7 @@ const FiltersPanel: React.FC<FiltersPanelProps> = ({ isLoading, onSubmit }) => {
               controlId="length"
               label="אורך"
               name="length"
-              options={Object.values(LENGTHS)}
+              options={LENGTHS}
               placeholder="בחר אורך"
             />
           </Row>
@@ -92,3 +92,5 @@ const FiltersPanel: React.FC<FiltersPanelProps> = ({ isLoading, onSubmit }) => {
 };
 
 export default FiltersPanel;
+
+// Chassidic, Topical, Analytical, Mussar

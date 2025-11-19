@@ -5,7 +5,7 @@ interface FilterProps {
   controlId: string;
   label: string;
   name: string;
-  options: string[];
+  options: Readonly<Record<string, string | number>>;
   placeholder: string;
   onChange?: (e: React.ChangeEvent<HTMLSelectElement>) => void;
   required?: boolean;
@@ -39,9 +39,9 @@ const Filter: React.FC<FilterProps> = ({
           onChange={onChange}
         >
           <option value="">{placeholder}</option>
-          {options.map((option) => (
-            <option key={option} value={option}>
-              {option}
+          {Object.entries(options).map(([label, value]) => (
+            <option key={String(value)} value={value}>
+              {label}
             </option>
           ))}
         </Form.Select>

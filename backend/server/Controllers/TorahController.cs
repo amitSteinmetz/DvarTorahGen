@@ -46,18 +46,19 @@ namespace server.Controllers
         }
 
         [HttpPost("generate-drasha")]
-        public async Task<IActionResult> GenerateDrasha(DrashaFilters filters)
+        public async Task<IActionResult> GenerateDrasha([FromBody] DrashaFilters filters)
         {
             //string drasha =  _torahRepository.GenerateDrasha(filters);
 
             var apiKey = _configuration.GetValue<string>("OpenAI:ApiKey");
 
-            ChatClient client = new(model: "gpt-4o", apiKey);
+            ChatClient client = new(model: "gpt-4.1", apiKey);
 
             var chatMessages = _drashaService.BuildMessages(filters);
 
             ChatCompletion completion = await client.CompleteChatAsync(chatMessages);
 
+            Console.WriteLine($"[ASSISTANT]: {completion.Content[0].Text}");
 
             return Ok(new { result = completion.Content[0].Text });
         }

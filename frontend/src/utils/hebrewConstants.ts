@@ -1,4 +1,3 @@
-// Hebrew constants for topics, parashot, and styles
 export const TOPICS = {
   "פרשת שבוע": "פרשת שבוע",
   "בר מצווה": "בר מצווה",
@@ -17,16 +16,15 @@ export const PARASHOT = {
 } as const;
 
 export const STYLES = {
-  "תעוף על זה": "תעוף על זה",
-  "רעיון קצר לשולחן השבת": "רעיון קצר לשולחן השבת",
-  "עיוני": "עיוני",
-  "חסידי": "חסידי",
-  "עם הומור": "עם הומור",
+ "חסידי": "Chassidic",
+  "אקטואלי": "Topical",
+  "עיוני": "Analytical",
+  "מוסר": "Mussar",
 } as const;
 
 export const LENGTHS = {
-  "קצר": "קצר",
-  "בינוני": "בינוני",
-  "ארוך": "ארוך",
+  "קצר": 200,
+  "בינוני": 400,
+  "ארוך": 600,
 } as const;
 

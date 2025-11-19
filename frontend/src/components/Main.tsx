@@ -36,6 +36,7 @@ const Main = () => {
     const filters: Filters = {
       topic: formData.get("topic") as string,
       style: formData.get("style") as string,
+      length: parseInt(formData.get("length") as string),
     };
 
     // Only include parasha if topic is "פרשת שבוע"
@@ -46,10 +47,12 @@ const Main = () => {
 
     setSubmittedFilters(filters);
 
+    console.log("Filters:", filters);
+
     try {
       // the response should contain a file, and a content as string.
       const response = await fetch(
-        "http://localhost:5286/api/torah/generate-drasha",
+        "https://localhost:7061/api/Torah/generate-drasha",
         {
           method: "POST",
           headers: { "Content-Type": "application/json" },
@@ -64,7 +67,7 @@ const Main = () => {
       const result = await response.json();
       console.log("Drasha response from openAI:", result);
 
-      // // Get the file from the response      
+      // // Get the file from the response
       // const blob = await response.blob();
 
       // // Extract filename from Content-Disposition header or use default

@@ -1,18 +1,21 @@
 {
   "Chassidic": {
-    "title": "Seeking Innerness, Emotion, and Clinging (Devotion)",
-    "explanation": "This style focuses on the inner and mystical dimension of the Torah and Mitzvot. The emphasis is on arousing the heart, joy, 'Deveikut' (clinging to God), and 'Avodah B'Gashmiut' (Worship in Materiality) – revealing the Divine spark in everyday life. It uses Kabbalistic concepts, 'lowered' for the human soul (like Sefirot and character traits), and parables (Mashal) to lead to practical spiritual awakening (Teshuvah, Ahavat Yisrael/Love of Israel)."
+    "Title": "Seeking Innerness, Emotion, and Clinging (Devotion)",
+    "Description": "This style focuses on the inner and mystical dimension of the Torah and Mitzvot. The emphasis is on arousing the heart, joy, 'Deveikut' (clinging to God), and 'Avodah B'Gashmiut' (Worship in Materiality) ï¿½ revealing the Divine spark in everyday life. It uses Kabbalistic concepts, 'lowered' for the human soul (like Sefirot and character traits), and parables (Mashal) to lead to practical spiritual awakening (Teshuvah, Ahavat Yisrael/Love of Israel)."
   },
-  "Current Affairs (Aktuali)": {
-    "title": "Torah as a Tool for Navigating Time and Events",
-    "explanation": "A direct link is drawn between a story or idea in the weekly Torah portion (Parashah) and current events, challenges, or significant dates. In the Israeli context, emphasis is placed on events affecting the entire Jewish people, such as wars, memorial days, Jerusalem Day, or socio-political challenges. The goal is to understand the Divine message behind the current events and find strength and guidance in the Torah to cope with them."
+  "Topical": {
+    "Title": "Torah as a Tool for Navigating Time and Events",
+    "Description": "A direct link is drawn between a story or idea in the weekly Torah portion (Parashah) and current events, challenges, or significant dates. In the Israeli context, emphasis is placed on events affecting the entire Jewish people, such as wars, memorial days, Jerusalem Day, or socio-political challenges. The goal is to understand the Divine message behind the current events and find strength and guidance in the Torah to cope with them."
   },
-  "Analytical (Iyuni)": {
-    "title": "In-Depth Analysis, Resolving Difficulties (Kushiyot), and Theoretical Study",
-    "explanation": "A style focused on deep, analytical study of the sources. The discourse typically begins with a question, a difficulty, or a contradiction between different sources (verses, Midrashim, early commentators/Rishonim). The goal is to resolve the difficulty through a fundamental clarification of concepts, Halachic definitions, or linguistic precision, using logical and philosophical tools. This style generally requires extensive knowledge of the sources (Talmud, Commentaries, Halakha)."
+  "Analytical": {
+    "Title": "In-Depth Analysis, Resolving Difficulties (Kushiyot), and Theoretical Study",
+    "Description": "A style focused on deep, analytical study of the sources. The discourse typically begins with a question, a difficulty, or a contradiction between different sources (verses, Midrashim, early commentators/Rishonim). The goal is to resolve the difficulty through a fundamental clarification of concepts, Halachic definitions, or linguistic precision, using logical and philosophical tools. This style generally requires extensive knowledge of the sources (Talmud, Commentaries, Halakha)."
   },
-  "Moralistic (Mussar)": {
-    "title": "Character Development, Ethical Correction, and Personal Advancement",
-    "explanation": "The purpose of this style is to motivate the listener toward self-improvement and correction of their character traits (Middot). It focuses on practical instructions concerning interpersonal relationships ('Ben Adam L'Chaveiro') and the relationship between man and God ('Ben Adam LaMakom'), such as the importance of speech, guarding the eyes, humility, and controlling anger. The discourse takes a verse or story and interprets it as guidance for personal character work, often utilizing sources from Mussar literature (e.g., Mesillat Yesharim, Chovot HaLevavot)."
+  "Mussar": {
+    "Title": "Character Development, Ethical Correction, and Personal Advancement",
+    "Description": "The purpose of this style is to motivate the listener toward self-improvement and correction of their character traits (Middot). It focuses on practical instructions concerning interpersonal relationships ('Ben Adam L'Chaveiro') and the relationship between man and God ('Ben Adam LaMakom'), such as the importance of speech, guarding the eyes, humility, and controlling anger. The discourse takes a verse or story and interprets it as guidance for personal character work, often utilizing sources from Mussar literature (e.g., Mesillat Yesharim, Chovot HaLevavot)."
   }
 }
+
+
+

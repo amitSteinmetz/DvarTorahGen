@@ -1,22 +1,42 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\dvarTorahGen\\backend\\",
+  "WorkspaceRootPath": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\dvartorahgen\\backend\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\drashamaker\\backend\\server\\services\\drashaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|solutionrelative:server\\services\\drashaservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\dvartorahgen\\backend\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\drashamaker\\backend\\server\\controllers\\torahcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|solutionrelative:server\\controllers\\torahcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\drashamaker\\backend\\server\\models\\drashafilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|solutionrelative:server\\models\\drashafilters.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\drashamaker\\backend\\server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|solutionrelative:server\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\drashamaker\\backend\\server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|solutionrelative:server\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\dvartorahgen\\backend\\server\\repositories\\torahrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|solutionrelative:server\\repositories\\torahrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\drashamaker\\backend\\server\\utils\\drashastyles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|solutionrelative:server\\utils\\drashastyles.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\dvartorahgen\\backend\\server\\controllers\\torahcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|solutionrelative:server\\controllers\\torahcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\drashamaker\\backend\\server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|solutionrelative:server\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\drashamaker\\backend\\server\\models\\drashastyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|solutionrelative:server\\models\\drashastyle.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|c:\\users\\owner\\desktop\\talpiot\\fullstack-projects\\drashamaker\\backend\\server\\repositories\\torahrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{8FDBDCE2-DDC7-4348-92F1-6077D77A3B91}|server\\server.csproj|solutionrelative:server\\repositories\\torahrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -26,7 +46,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 328,
-          "SelectedChildIndex": 3,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -38,11 +58,76 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "launchSettings.json",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Properties\\launchSettings.json",
+              "RelativeDocumentMoniker": "server\\Properties\\launchSettings.json",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Properties\\launchSettings.json",
+              "RelativeToolTip": "server\\Properties\\launchSettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-19T10:19:42.927Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "DrashaStyle.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Models\\DrashaStyle.cs",
+              "RelativeDocumentMoniker": "server\\Models\\DrashaStyle.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Models\\DrashaStyle.cs",
+              "RelativeToolTip": "server\\Models\\DrashaStyle.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAqAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T15:58:01.328Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "DrashaStyles.json",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Utils\\DrashaStyles.json",
+              "RelativeDocumentMoniker": "server\\Utils\\DrashaStyles.json",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Utils\\DrashaStyles.json",
+              "RelativeToolTip": "server\\Utils\\DrashaStyles.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-11-18T08:49:19.323Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "DrashaFilters.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Models\\DrashaFilters.cs",
+              "RelativeDocumentMoniker": "server\\Models\\DrashaFilters.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Models\\DrashaFilters.cs",
+              "RelativeToolTip": "server\\Models\\DrashaFilters.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAyAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T08:47:13.533Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DrashaService.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Services\\DrashaService.cs",
+              "RelativeDocumentMoniker": "server\\Services\\DrashaService.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Services\\DrashaService.cs",
+              "RelativeToolTip": "server\\Services\\DrashaService.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAuwCIAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-18T08:46:16.194Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
               "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\dvarTorahGen\\backend\\server\\appsettings.json",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\appsettings.json",
               "RelativeDocumentMoniker": "server\\appsettings.json",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\dvarTorahGen\\backend\\server\\appsettings.json",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\appsettings.json",
               "RelativeToolTip": "server\\appsettings.json",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAABAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
@@ -51,39 +136,39 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 6,
               "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\dvarTorahGen\\backend\\server\\Program.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Program.cs",
               "RelativeDocumentMoniker": "server\\Program.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\dvarTorahGen\\backend\\server\\Program.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Program.cs",
               "RelativeToolTip": "server\\Program.cs",
-              "ViewState": "AgIAAAQAAAAAAAAAAAAAABkAAAAPAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAQwBkAAAA1AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-03T13:18:30.572Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 1,
               "Title": "TorahController.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\dvarTorahGen\\backend\\server\\Controllers\\TorahController.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Controllers\\TorahController.cs",
               "RelativeDocumentMoniker": "server\\Controllers\\TorahController.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\dvarTorahGen\\backend\\server\\Controllers\\TorahController.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Controllers\\TorahController.cs",
               "RelativeToolTip": "server\\Controllers\\TorahController.cs",
-              "ViewState": "AgIAABMAAAAAAAAAAAA9wDwAAAABAAAAAAAAAA==",
+              "ViewState": "AgIAABsAAAAAAAAAAAAowC0AAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-03T09:54:16.636Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 8,
               "Title": "TorahRepository.cs",
-              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\dvarTorahGen\\backend\\server\\Repositories\\TorahRepository.cs",
+              "DocumentMoniker": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Repositories\\TorahRepository.cs",
               "RelativeDocumentMoniker": "server\\Repositories\\TorahRepository.cs",
-              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\dvarTorahGen\\backend\\server\\Repositories\\TorahRepository.cs",
+              "ToolTip": "C:\\Users\\Owner\\Desktop\\talpiot\\fullstack-projects\\DrashaMaker\\backend\\server\\Repositories\\TorahRepository.cs",
               "RelativeToolTip": "server\\Repositories\\TorahRepository.cs",
-              "ViewState": "AgIAAEEAAAAAAAAAAAAwwFcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADgAAAAAAAAAAAAwwEcAAABMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T13:46:55.892Z",
               "EditorCaption": ""
