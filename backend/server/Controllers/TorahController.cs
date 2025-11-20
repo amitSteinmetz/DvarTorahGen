@@ -22,29 +22,6 @@ namespace server.Controllers
             _configuration = configuration;
         }
 
-        [HttpPost("generate-dummy")]
-        public IActionResult Generate([FromQuery] string format = "docx")
-        {
-            byte[] fileBytes;
-            string contentType;
-            string fileName;
-
-            if (format != null && format.ToLower() == "pdf")
-            {
-                fileBytes = _torahRepository.GenerateDummyPdf();
-                contentType = "application/pdf";
-                fileName = "dvar-torah.pdf";
-            }
-            else
-            {
-                fileBytes = _torahRepository.GenerateDummyDocx();
-                contentType = "application/vnd.openxmlformats-officedocument.wordprocessingml.document";
-                fileName = "dvar-torah.docx";
-            }
-
-            return File(fileBytes, contentType, fileName);
-        }
-
         [HttpPost("generate-drasha")]
         public async Task<IActionResult> GenerateDrasha([FromBody] DrashaFilters filters)
         {

@@ -11,14 +11,17 @@ namespace server.Services
     {
         private readonly StyleMap _styleMap;
         private readonly TopicMap _topicMap;
+        private readonly PromptTemplates _prompts;
 
-        public DrashaService(string stylesJsonPath, string topicsJsonPath)
+        public DrashaService(IDictionary<string, string> jsonFilePaths)
         {
-            var stylesJson = File.ReadAllText(stylesJsonPath);
-            var topicsJson = File.ReadAllText(topicsJsonPath);
+            var stylesJson = File.ReadAllText(jsonFilePaths["styles"]);
+            var topicsJson = File.ReadAllText(jsonFilePaths["topics"]);
+            var promptsJson = File.ReadAllText(jsonFilePaths["prompts"]);
 
             _styleMap = JsonSerializer.Deserialize<StyleMap>(stylesJson) ?? new StyleMap();
             _topicMap = JsonSerializer.Deserialize<TopicMap>(topicsJson) ?? new TopicMap();
+            _prompts = JsonSerializer.Deserialize<PromptTemplates>(promptsJson) ?? new PromptTemplates();
         }
 
         public ChatMessage[] BuildMessages(DrashaFilters filters)
@@ -30,31 +33,16 @@ namespace server.Services
                 ? topicExplanation
                 : "";
 
-            var systemMessage = new SystemChatMessage(
-                @"אתה רב יהודי בקיא בתורה, במדרש, בתלמוד, בראשונים ובאחרונים.
-                אתה כותב דברי תורה בעברית טבעית, אותנטית, עם עומק וחום אנושי.
-                עליך להימנע מניסוח שנשמע מלאכותי או מרמז על כתיבה אוטומטית."
-            );
+            var systemMessage = new SystemChatMessage(_prompts.System);
 
             var userMessage = new UserChatMessage(
-                $@"כתוב דבר תורה בעברית על פי המאפיינים הבאים:
-                    קטגוריה: {filters.Topic},
-                    הסבר הקטגוריה: {drashaTopicExplanation},
-                    פרשה: {filters.Parasha ?? ""},
-                    אורך: בערך {filters.Length} מילים,
-                    סגנון: {drashaStyleObj.Title},
-                    הסבר הסגנון:
-                    {drashaStyleObj.Description}
-
-                    הנחיות:
-                    - בתשובתך אל תכניס כוכביות, וניקוד אותיות 
-                    - אם ערך הקטגוריה אינו 'פרשת שבוע', התעלם משדה 'פרשה'.
-                    - התשובה חייבת להיות בעברית תקינה, עם דקדוק נכון וכתיבה מימין לשמאל.
-                    - צטט רק מקורות אמיתיים. אם אין מקור מתאים — אל תיצור מקור חדש.
-                    - בעת ציטוט פסוק או מדרש, ציין מיד את המקור (ספר, פרק, פסוק).
-                    - שלב מסר רוחני ברור ומשמעותי.
-                    - הכתיבה חייבת להישמע אנושית, זורמת וחיה — לא רובוטית.
-                    - השתמש בלשון עשירה אך נגישה, המתאימה לדברי תורה מדוברים או כתובים."
+                _prompts.User
+                    .Replace("{Topic}", filters.Topic)
+                    .Replace("{TopicExplanation}", drashaTopicExplanation)
+                    .Replace("{Parasha}", filters.Parasha ?? "")
+                    .Replace("{Length}", filters.Length.ToString())
+                    .Replace("{StyleTitle}", drashaStyleObj.Title)
+                    .Replace("{StyleDescription}", drashaStyleObj.Description)
             );
 
             return [systemMessage, userMessage];

@@ -3,6 +3,7 @@ using OpenAI.Chat;
 using QuestPDF.Infrastructure;
 using server.Repositories;
 using server.Services;
+using server.Utils;
 
 namespace server
 {
@@ -28,11 +29,11 @@ namespace server
             builder.Services.AddSingleton<DrashaService>(sp =>
             {
                 var env = sp.GetRequiredService<IWebHostEnvironment>();
-                var path = Path.Combine(env.ContentRootPath, "Utils", "DrashaStyles.json");
-                return new DrashaService(path);
+                var jsonDict = JsonUtils.BuildDrashaJsonFilePaths(env);
+                return new DrashaService(jsonDict);
             });
 
-            // Configure CORS to allow all origins (for development)
+            // Configure CORS to allow all origins (for development)s
             builder.Services.AddCors(options =>
             {
                 options.AddPolicy("allowAll" ,policy =>
