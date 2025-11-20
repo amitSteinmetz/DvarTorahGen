@@ -86,16 +86,15 @@ const ResultsSection: React.FC<ResultsSectionProps> = ({
               {title}
             </h4>
             <ButtonGroup className="flex-shrink-0 justify-content-center w-100 w-md-auto results-buttons">
-              {onCreateNew && (
-                <Button
-                  variant="info"
-                  size="sm"
-                  onClick={onCreateNew}
-                  title="צור דבר תורה חדש"
-                >
-                  ✨ צור חדש
-                </Button>
-              )}
+              <Button
+                variant="info"
+                size="sm"
+                onClick={onCreateNew}
+                title="צור דבר תורה חדש"
+              >
+                ✨ צור חדש
+              </Button>
+
               <Button
                 variant="light"
                 size="sm"

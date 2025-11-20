@@ -12,8 +12,8 @@ interface FiltersPanelProps {
 const FiltersPanel: React.FC<FiltersPanelProps> = ({ isLoading, onSubmit }) => {
   const [selectedTopic, setSelectedTopic] = useState<string>("");
 
-  const handleTopicChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
-    setSelectedTopic(e.target.selectedOptions[0]?.text ?? "");
+  const handleTopicChange = (_value: string, label: string) => {
+    setSelectedTopic(label);
   };
   const showParashaFilter = useMemo(
     () => selectedTopic === "פרשת שבוע",

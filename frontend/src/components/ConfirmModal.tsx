@@ -2,6 +2,7 @@ import React, { ReactNode } from "react";
 import { Modal, Button } from "react-bootstrap";
 
 interface ConfirmModalProps {
+  show: boolean;
   title: string;
   message: string | ReactNode;
   confirmText?: string;
@@ -11,6 +12,7 @@ interface ConfirmModalProps {
 }
 
 const ConfirmModal: React.FC<ConfirmModalProps> = ({
+  show,
   title,
   message,
   confirmText = "אישור",
@@ -19,7 +21,7 @@ const ConfirmModal: React.FC<ConfirmModalProps> = ({
   onCancel,
 }) => {
   return (
-    <Modal onHide={onCancel} centered className="confirm-modal">
+    <Modal show={show} onHide={onCancel} centered className="confirm-modal">
       <Modal.Header closeButton className="border-0 pb-0">
         <Modal.Title className="w-100 text-center">{title}</Modal.Title>
       </Modal.Header>
